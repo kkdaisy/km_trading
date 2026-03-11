@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Widget</title>
+    <style>
+        /* 노션에서 가득 차게 보이도록 여백 제거 */
+        body { margin: 0; padding: 0; overflow: hidden; background-color: transparent; }
+    </style>
+</head>
+<body>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
+        { "proName": "NASDAQ:QQQM", "title": "QQQM" },
+        { "proName": "AMEX:DGRO", "title": "DGRO" },
+        { "proName": "NASDAQ:AAPL", "title": "AAPL" },
+        { "proName": "NASDAQ:MSFT", "title": "MSFT" },
+        { "proName": "NASDAQ:GOOGL", "title": "GOOGL" },
+        { "proName": "NASDAQ:META", "title": "META" },
+        { "proName": "NASDAQ:COST", "title": "COST" },
+        { "proName": "NASDAQ:NVDA", "title": "NVDA" },
+        { "proName": "NYSE:PLTR", "title": "PLTR" },
+        { "proName": "KRX:003490", "title": "대한항공" }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "light",
+      "isTransparent": true,
+      "displayMode": "regular",
+      "locale": "kr"
+    }
+      </script>
+    </div>
+</body>
+</html>
